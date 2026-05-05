@@ -16,10 +16,11 @@ def garden_operations(operation_number: int) -> None:
 
 
 def test_error_types() -> None:
+    print("=== Garden Error Types Demo ===")
     try:
         garden_operations(0)
     except ValueError as error:
-        print(f"Caught ValueErrro: {error}")
+        print(f"Caught ValueError: {error}")
     try:
         garden_operations(1)
     except ZeroDivisionError as error:
@@ -41,4 +42,4 @@ def test_error_types() -> None:
 
 if __name__ == "__main__":
     test_error_types()
-    print("All error types successfully!")
+    print("All error types tested successfully!")
