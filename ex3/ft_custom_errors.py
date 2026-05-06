@@ -36,7 +36,7 @@ if __name__ == '__main__':
     except PlantError as error:
         print(f"Caught PlantError: {error}\n")
 
-    print("Testing WaterError")
+    print("Testing WaterError...")
     try:
         werror(7)
     except WaterError as error:
